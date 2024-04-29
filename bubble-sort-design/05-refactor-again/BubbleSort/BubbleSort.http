@@ -1,0 +1,6 @@
+@BubbleSort_HostAddress = http://localhost:5214
+
+GET {{BubbleSort_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
