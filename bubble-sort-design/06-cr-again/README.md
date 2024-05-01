@@ -12,3 +12,5 @@ Các bạn thân mến, các design patterns, các mô hình lập trình không
 4. Khả năng kiểm thử.
 5. Khả năng mở rộng quy mô (scaling).
 6. An toàn và bảo mật.
+Biết về design pattern và các mô hình lập trình là yêu cầu cần phải có đối với các nhóm lập trình viên khác nhau. Chúng ta có Web Developer, Game Developer, Embeded Developer ... Với mỗi nhóm lập trình viên lại có những pattern, mô hình khác nhau cần phải biết. Có lẽ cái danh "Nhà phát triển" dựa trên phần nào yêu cầu ấy. Mọi developer đều là programmer, nhưng không phải mọi programmer đều là developer. Về mặt nghề nghiệp, ý tưởng này có thể giúp các bạn hiểu được lộ trình sự nghiệp của mình.
+Hãy luôn nhớ rằng, pattern hay paradigm đều từ kinh nghiệm mà ra, tức là qua thực tiễn, đặc biệt là design pattern. Các mô hình có đặc tả lý thuyết dễ hiểu hơn so với Design Pattern, do Design Pattern đi vào những vấn đề chi tiết. Điều này có thể chỉ ra một con đường để các bạn nghiên cứu Design Pattern dễ hơn. Đừng cố gắng học thuộc. Hãy tập trung vào vấn đề mà pattern muốn giải quyết, và điều còn lại là thực hành. Một cách thực hành là hãy đọc thật nhiều code.
