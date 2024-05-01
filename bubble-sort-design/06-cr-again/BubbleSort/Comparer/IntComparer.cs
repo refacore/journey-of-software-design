@@ -8,7 +8,7 @@ public class IntComparer : IComparer<int>
         {
             return 1;
         }
-        else if (x == y)
+        else if (x < y)
         {
             return -1;
         }

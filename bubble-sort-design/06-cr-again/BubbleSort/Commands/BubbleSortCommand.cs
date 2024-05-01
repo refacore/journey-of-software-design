@@ -2,8 +2,10 @@ namespace BubbleSort.Commands;
 
 using Microsoft.AspNetCore.Mvc;
 using BubbleSort.Comparer;
+using System.Text.Json;
+using System.Data.SqlClient;
 
-public abstract class BubbleSortCommand<T>
+public abstract class BubbleSortCommand<T> : ISorter<T>
 {
     private readonly IComparerFactory _comparerFactory;
 
@@ -36,13 +38,13 @@ public abstract class BubbleSortCommand<T>
 
     private void SaveResult(T[] input)
     {
-        var jsonString = JsonConvert.Serialize(input);
+        var jsonString = JsonSerializer.Serialize(input);
 
         using var conn = new SqlConnection("");
 
-        using var cmd = new SqlCommand(conn);
+        using var cmd = conn.CreateCommand();
 
-        cmd.Text = $"INSERT INTO SortResults(SortedResult) VALUES ({jsonString})";
+        cmd.CommandText = $"INSERT INTO SortResults(SortedResult) VALUES ({jsonString})";
 
         cmd.ExecuteNonQuery();
     }

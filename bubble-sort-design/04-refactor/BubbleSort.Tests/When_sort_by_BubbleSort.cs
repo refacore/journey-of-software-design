@@ -11,7 +11,7 @@ public class When_sort_by_BubbleSort
         // arrange
         var intArray = new int[] { 3, 4, 2, 1 };
 
-        var expectedArray = new int[] { 1, 2, 3, 4 };
+        var expectedArray = new int[] { 1 };
 
         var bubbleSortFactory = MockBubbleSortFactory();
 
@@ -21,7 +21,7 @@ public class When_sort_by_BubbleSort
 
         command.DataType = DataType.Integer;
 
-        // action
+        // act
         var result = command.Sort();
 
         // assert
@@ -34,7 +34,7 @@ public class When_sort_by_BubbleSort
         // arrange
         var stringArray = new string[] { "3", "4", "2", "1" };
 
-        var expectedArray = new string[] { "1", "2", "3", "4" };
+        var expectedArray = new string[] { "1" };
 
         var bubbleSortFactory = MockBubbleSortFactory();
 
@@ -44,7 +44,7 @@ public class When_sort_by_BubbleSort
 
         command.DataType = DataType.String;
 
-        // action
+        // act
         var result = command.Sort();
 
         // assert
@@ -67,7 +67,7 @@ public class When_sort_by_BubbleSort
     {
         var mock = new Mock<IBubbleSort>();
 
-        mock.Setup(x => x.Sort(It.IsAny<string>())).Returns(new int[] { 1, 2, 3, 4 });
+        mock.Setup(x => x.Sort(It.IsAny<string>())).Returns(new int[] { 1 });
 
         return mock.Object;
     }
@@ -76,7 +76,7 @@ public class When_sort_by_BubbleSort
     {
         var mock = new Mock<IBubbleSort>();
 
-        mock.Setup(x => x.Sort(It.IsAny<string>())).Returns(new string[] { "1", "2", "3", "4" });
+        mock.Setup(x => x.Sort(It.IsAny<string>())).Returns(new string[] { "1" });
 
         return mock.Object;
     }

@@ -3,7 +3,7 @@ namespace BubbleSort.Commands;
 using Microsoft.AspNetCore.Mvc;
 using BubbleSort.Comparer;
 
-public abstract class BubbleSortCommand<T>
+public class BubbleSortCommand<T> : ISorter<T>
 {
     private readonly IComparerFactory _comparerFactory;
 

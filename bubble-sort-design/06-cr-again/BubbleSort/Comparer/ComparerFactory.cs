@@ -6,11 +6,11 @@ public class ComparerFactory : IComparerFactory
     {
         if (typeof(T) == typeof(int))
         {
-            return new IntComparer() as IComparer<T>;
+            return (IComparer<T>)new IntComparer();
         }
         else if (typeof(T) == typeof(string))
         {
-            return new StringComparer() as IComparer<T>;
+            return (IComparer<T>)new StringComparer();
         }
         else
         {
