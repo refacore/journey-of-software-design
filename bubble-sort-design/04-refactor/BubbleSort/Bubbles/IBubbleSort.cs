@@ -1,6 +1,6 @@
 namespace BubbleSort.Bubbles;
 
-public interface IBubbleSort<T>
+public interface IBubbleSort
 {
-    T[] Sort(T[] input);
+    object Sort(string input);
 }

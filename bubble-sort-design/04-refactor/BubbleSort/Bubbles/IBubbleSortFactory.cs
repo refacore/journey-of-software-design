@@ -2,5 +2,5 @@ namespace BubbleSort.Bubbles;
 
 public interface IBubbleSortFactory
 {
-    IBubbleSort<T> Create<T>();
+    IBubbleSort Create(DataType type);
 }

@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 
-public class BubbleSort
+namespace BubbleSort.Commands;
+
+public class BubbleSortCommand
 {
     [FromQuery]
     public int[] Numbers { get; set; } = [];
@@ -15,15 +17,22 @@ public class BubbleSort
             {
                 if (Numbers[j] > Numbers[j + 1])
                 {
-                    var tempVar = Numbers[j];
+                    Swap(Numbers, j, j + 1);
 
-                    Numbers[j] = Numbers[j + 1];
-
-                    Numbers[j + 1] = tempVar;
+                    // Numbers.Swap(j, j + 1);
                 }
             }
         }
 
         return Numbers;
+    }
+
+    private void Swap(int[] numbers, int index, int next)
+    {
+        var tempVar = Numbers[index];
+
+        Numbers[index] = Numbers[next];
+
+        Numbers[next] = tempVar;
     }
 }

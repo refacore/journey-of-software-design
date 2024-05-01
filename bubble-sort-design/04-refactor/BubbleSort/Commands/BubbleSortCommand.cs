@@ -1,10 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
 using BubbleSort.Bubbles;
 
+namespace BubbleSort.Commands;
+
 public class BubbleSortCommand
 {
     [FromQuery]
-    public object[] Input { get; set; } = [];
+    public string Input { get; set; } = "[]";
+
+    public DataType DataType { get; set; } = DataType.Integer;
 
     private readonly IBubbleSortFactory _bubbleSortFactory;
 
@@ -13,9 +17,9 @@ public class BubbleSortCommand
         _bubbleSortFactory = bubbleSortFactory;
     }
 
-    public object[] Sort()
+    public object Sort()
     {
-        var bubbleSort = _bubbleSortFactory.Create(Input[0].GetType());
+        var bubbleSort = _bubbleSortFactory.Create(this.DataType);
 
         return bubbleSort.Sort(Input);
     }

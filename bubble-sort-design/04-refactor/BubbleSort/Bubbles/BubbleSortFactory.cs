@@ -2,19 +2,18 @@ namespace BubbleSort.Bubbles;
 
 public class BubbleShortFactory : IBubbleSortFactory
 {
-    public IBubbleSort<T> Create<T>()
+    public IBubbleSort Create(DataType type)
     {
-        if (typeof(T) is int)
+        switch (type)
         {
-            return new IntBubbleSort() as IBubbleSort<T>;
-        }
-        else if (typeof(T) is string)
-        {
-            return new StringBubbleSort() as IBubbleSort<T>;
-        }
-        else
-        {
-            throw new NotImplementedException();
+            case DataType.Integer:
+                return new IntBubbleSort();
+
+            case DataType.String:
+                return new StringBubbleSort();
+
+            default:
+                throw new NotImplementedException(type.ToString());
         }
     }
 }

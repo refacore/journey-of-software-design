@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 
-public class BubbleSortString
+namespace BubbleSort.Commands;
+
+public class BubbleSortStringCommand
 {
     [FromQuery]
     public string[] Strings { get; set; } = [];

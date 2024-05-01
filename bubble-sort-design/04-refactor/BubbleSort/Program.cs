@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using BubbleSort.Commands;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,18 +39,11 @@ app.MapGet("/weatherforecast", () =>
 .WithName("GetWeatherForecast")
 .WithOpenApi();
 
-app.MapGet("/sort", ([AsParameters] BubbleSort bubbleSort) =>
+app.MapGet("/sort", ([AsParameters] BubbleSortCommand command) =>
 {
-    return bubbleSort.Sort();
+    return command.Sort();
 })
 .WithName("Sort")
-.WithOpenApi();
-
-app.MapGet("/sort-strings", ([AsParameters] BubbleSortString bubbleSort) =>
-{
-    return bubbleSort.Sort();
-})
-.WithName("SortString")
 .WithOpenApi();
 
 app.Run();

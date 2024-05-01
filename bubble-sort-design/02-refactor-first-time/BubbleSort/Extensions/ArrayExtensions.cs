@@ -2,10 +2,10 @@ public static class ArrayExtensions
 {
     public static void Swap(this int[] numbers, int originIndex, int swapIndex)
     {
-        var tempVar = Numbers[index];
+        var tempVar = numbers[originIndex];
 
-        Numbers[index] = Numbers[next];
+        numbers[originIndex] = numbers[swapIndex];
 
-        Numbers[next] = tempVar;
+        numbers[swapIndex] = tempVar;
     }
 }
