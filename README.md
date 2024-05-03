@@ -9,5 +9,7 @@ Trong dự án tôi tham gia trước đây, sau khi tôi đề xuất ứng d�
 6. An toàn và bảo mật.
 
 Chỉ liệt kê những lợi ích kể trên thì thật sáo rỗng và tẻ nhạt. Vì thế tôi viết bài này với mong muốn chúng ta có thể hiểu bối cảnh, động cơ mà các thiết kế phần mềm ra đời.
+
 Tóm tắt thì bài viết chỉ thể hiện lại công việc của chúng ta vẫn làm hằng ngày, nhưng tạo cơ hội cho chúng ta đứng ở góc nhìn người thứ ba để đánh giá và rút ra kết luận.
-Phần mã nguồn trong bài viết này sử dụng C# và .net8, api viết theo cách minimal.
+
+Phần mã nguồn trong bài viết này sử dụng C# và .net8, api viết theo cách minimal api. Mỗi project có file README riêng để mô tả tường bước trong quá trình làm việc.
