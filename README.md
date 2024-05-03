@@ -5,7 +5,7 @@ Trong dự án tôi tham gia trước đây, sau khi tôi đề xuất ứng d�
 2. Khẳ năng tái sử dụng.
 3. Khả năng mở rộng chức năng (extensibility).
 4. Khả năng kiểm thử.
-5. Khả năng mở rộng quy mô (scaling).
+5. Khả năng mở rộng quy mô (scalibility).
 6. An toàn và bảo mật.
 
 Chỉ liệt kê những lợi ích kể trên thì thật sáo rỗng và tẻ nhạt. Vì thế tôi viết bài này với mong muốn chúng ta có thể hiểu bối cảnh, động cơ mà các thiết kế phần mềm ra đời.

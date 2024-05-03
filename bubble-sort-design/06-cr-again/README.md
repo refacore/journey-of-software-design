@@ -19,7 +19,7 @@ Các bạn thân mến, các design patterns, các mô hình lập trình không
 2. Khẳ năng tái sử dụng.
 3. Khả năng mở rộng chức năng (extensibility).
 4. Khả năng kiểm thử.
-5. Khả năng mở rộng quy mô (scaling).
+5. Khả năng mở rộng quy mô (scalibility).
 6. An toàn và bảo mật.
 
 ### Mọi Nhà phát triển đều là lập trình viên, nhưng không phải lập trình viên nào cũng là nhà phát triển.
