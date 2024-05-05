@@ -46,3 +46,6 @@ Bạn thân mến, vì lẽ đó chúng ta có thể nhận biết đâu là kĩ
 
 ### Code sạch sẽ có thể không bá đạo, nhưng code bá đạo chắc chắn là sạch sẽ.
 Thế nên nếu code của bạn còn rối rắm thì bạn biết mình cần cải thiện điều gì rồi đấy. Vở sạch chữ đẹp không phải là một tiêu chí phụ, mà có khi lại là tiêu chí tiên quyết.
+
+### Bạn sẽ tính toán đến bước thứ mấy dự án?
+Mọi dự án đều sẽ có kịch bản tương tự như thế này. Vậy bạn sẽ chuẩn bị mã nguồn của mình đến bước thứ mấy? Tầm nhìn là phẩm chất quan trọng bậc nhất đối với những người có trách nhiệm thiết kế phần mềm và viết những dòng code đầu tiên.
