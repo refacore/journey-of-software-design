@@ -8,6 +8,7 @@ public class BubbleSortCommand
     [FromQuery]
     public string Input { get; set; } = "[]";
 
+    [FromQuery]
     public DataType DataType { get; set; } = DataType.Integer;
 
     private readonly IBubbleSortFactory _bubbleSortFactory;
